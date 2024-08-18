@@ -15,8 +15,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rocakirby.agusdropoutmod.block.ModBlocks;
+import net.rocakirby.agusdropoutmod.item.ModCreativeModeTabs;
 import net.rocakirby.agusdropoutmod.item.ModItems;
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -33,6 +33,8 @@ public class AgusDropOut {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -48,15 +50,7 @@ public class AgusDropOut {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.AGUSTAINITA);
-        }
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModItems.AGUSTAINITA_SWORD);
-        }
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.AGUSTAINITA_BLOCK);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

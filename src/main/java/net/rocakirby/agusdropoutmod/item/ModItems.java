@@ -15,6 +15,12 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> AGUSTAINITA_SWORD = ITEMS.register("agustainita_sword",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AGUSTAINITA_PICKAXE = ITEMS.register("agustainita_pickaxe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AGUSTAINITA_AXE = ITEMS.register("agustainita_axe",
+            () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventbus){
         ITEMS.register(eventbus);

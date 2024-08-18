@@ -1,4 +1,10 @@
 {
   "item.agusdropoutmod.agustainita": "Agustainita Gem",
-  "item.agusdropoutmod.agustainita_sword": "Agustainita Sword"
+  "item.agusdropoutmod.agustainita_sword": "Agustainita Sword",
+  "item.agusdropoutmod.agustainita_pickaxe": "Agustainita Pickaxe",
+  "item.agusdropoutmod.agustainita_axe": "Agustainita Axe",
+
+  "block.agusdropoutmod.agustainita_block": "Block of Agustainita",
+
+  "creativetab.agusdropoutmod.agustainita_mod": "Agustainita"
 }
